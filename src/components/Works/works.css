@@ -1,0 +1,84 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(90vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column; /* Center vertically */
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#worksslides {
+    margin: 0 auto; /* Center horizontally */
+    min-height: calc(30vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: row; /* Display images in a single line */
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    text-align: left; /* Align text to the left */
+    padding: 0 1rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+#worksslides::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+#worksslides {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.workHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    margin-bottom: 1rem; /* Add some spacing between title and description */
+}
+
+.workTitle {
+    font-size: 3rem;
+    margin: 0; /* Remove default margin */
+}
+
+.workDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+    margin: 0; /* Remove default margin */
+}
+
+.workImgs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align images to the left */
+    flex-wrap: nowrap; /* Prevent images from wrapping to the next line */
+    width: 100%; /* Occupy full width */
+    max-width: 65rem;
+}
+
+.workImg {
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.workBtn {
+    background: white;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.5rem 2.5rem;
+    margin: 3rem 0;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 585px) {
+    .workImg {
+        height: 48vw;
+    }
+}

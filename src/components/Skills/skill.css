@@ -1,0 +1,112 @@
+#skills {
+    overflow: hidden;
+    width: 100%;
+    padding: 0rem;
+    text-align: center;
+    height: 100vh;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  .skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skillDesc {
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.details-container {
+    flex: 1 1 300px;
+    padding: 1.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0 29 36);
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(47, 213, 255);
+}
+
+.skillBarImg {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+@media screen and (max-width: 768px) {
+    .details-container {
+        flex: 1 1 100%; /* Adjust for mobile view */
+    }
+}
+  
+  .text-container {
+    max-width: 800px; /* Adjust according to your design */
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skills-list li {
+    font-size: 0.8rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.5rem; /* Adjust the border-radius for a more rounded look */
+    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+    margin-bottom: 10px;
+    color: #000000; /* Skill label color */
+    font-weight: 600;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Add a slight box shadow for depth */
+    transition: background-color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+.skills-list li:hover {
+    background-color: rgb(47, 213, 255);; /* Change background color on hover */
+}
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+@media screen and (max-width: 768px) {
+.details-container {
+    flex: 1 1 100%;
+}
+}
+
+@media screen and (max-width: 480px) {
+#skills {
+    height: auto;
+}
+.skillTitle {
+    font-size: 2.5rem;
+}
+.skillDesc {
+    font-size: 1.2rem;
+}
+.skillBarImg {
+    height: 4rem;
+    width: 4rem;
+}
+}
